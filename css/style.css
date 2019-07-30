@@ -1,0 +1,51 @@
+* {
+  font-family: '微軟正黑體';
+}
+
+h1 {
+  letter-spacing: 0.5rem;
+}
+
+/* 背景 */
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-header {
+  height: 280px;
+}
+
+@media (min-width: 576px) {
+  .bg-header {
+    height: 380px;
+  }
+}
+
+/* 陰影 */
+.shadow-sm {
+  box-shadow:0 .125rem .25rem rgba(0,0,0,.2)!important
+}
+
+
+/* 按鈕 */
+.btn {
+  border-width: 2px;
+}
+
+/* icons-down */
+.icons-down {
+  position: relative;
+}
+
+.icons-down::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -15px;
+  transform: translateX(-50%);
+  width: 25px;
+  height: 25px;
+  border: 2px solid #559ac8;
+  border-radius: 50%;
+  background: #fff url(../images/icons_down2.png) center center no-repeat;
+}
